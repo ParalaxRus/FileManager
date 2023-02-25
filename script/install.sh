@@ -1,5 +1,7 @@
 #!/bin/bash
 
+echo "Make sure you've udpated OS with 'sudo apt --update'"
+
 apt -y update
 apt -y install git
 apt -y install g++
