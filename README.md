@@ -7,7 +7,7 @@ Provides following API:
 - Create text file: filemanager --create [src] [data]
 - Copy file: filemanager --copy [src] [dst]
 - Combine file: filemanager --combine [first] [second] [dst]
-- Delete file: filemanager --delete [src]
+- Delete file: filemanager --delete [src]  
 Supports only one command at a time for now
 
 1. Project structure  
