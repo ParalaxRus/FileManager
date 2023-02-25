@@ -22,7 +22,7 @@ cd build/
 cmake ..  
 make  
 make test  
-3) output cli tool should be in build/app/filemanager   
+c) output executable: build/app/filemanager  
 
 3. Depends on the boost 1.74 libraries
 
