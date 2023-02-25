@@ -21,7 +21,7 @@ Restrictions:
 Project structure:  
 app - file manager CLI executable, parser and commands execution  
 common - shared library with the file manipulation logic  
-script - installation script mimicking CI pipeline  
+script - installation script mimicking CI pipeline  (might need 'sudo')  
 tests - unit tests  
 
 Build and run unit tests with the cmake tool:  
