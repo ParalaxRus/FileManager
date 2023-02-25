@@ -11,7 +11,7 @@ Provides following API:
 
 Example:  
 ./filemanager --create a.txt text  
-or in case if elevated privileges needed
+or in case if elevated privileges needed  
 sudo ./filemanager --create a.txt text  
 
 Restrictions:  
