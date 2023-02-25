@@ -13,7 +13,6 @@ std::unique_ptr<Command> Parser::parse(int argc, char **argv) {
 
     po::options_description desc("Allowed options");
     desc.add_options()
-        ("help", "help message")
         (kCreate.c_str(), po::value<std::vector<std::string>>()->multitoken(), "Create file [src] [data]")
         (kCopy.c_str(), po::value<std::vector<std::string>>()->multitoken(), "Copy file [src] [dst]")
         (kCombine.c_str(), po::value<std::vector<std::string>>()->multitoken(), "Combine file [first] [second] [dst]")
@@ -51,7 +50,8 @@ std::unique_ptr<Command> Parser::parse(int argc, char **argv) {
         return std::make_unique<DeleteCommand>(params);
     }
     else {
-        throw std::invalid_argument("Invalid command");
+        const std::string usage = "filemanager [command] [args]\ncommand:\ncreate src [data]\ncopy src dst\ncombine first second dst\ndelete src\nexample: <filemanager --create tmp.txt text>";
+        throw std::invalid_argument("Invalid command. Usage: \n" + usage);
     }
 
     return 0;
