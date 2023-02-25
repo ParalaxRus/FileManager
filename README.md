@@ -13,12 +13,12 @@ Restrictions:
 - Supports only one command at a time for now
 - Supports create and combine of the text files (binary streams are not tested) 
 
-1. Project structure  
+Project structure:
 App - file manager CLI executable, parser and commands execution  
 Common - shared library with the file manipulation logic  
 Tests - unit tests  
 
-2. Build and run unit tests with the cmake tool  
+Build and run unit tests with the cmake tool:
 a) use git to checkout to your local machine  
 b) on your local machine within the repo typo  
 mkdir build  
@@ -28,5 +28,5 @@ make
 make test  
 c) output executable: build/app/filemanager  
 
-3. Depends on the boost 1.74 libraries
+Depends on the boost 1.74 libraries
 
