@@ -9,6 +9,11 @@ Provides following API:
 - Combine two text file: filemanager --combine [first] [second] [dst]
 - Delete file: filemanager --delete [src]  
 
+Example:  
+./filemanager --create a.txt text  
+or in case if elevated privileges needed
+sudo ./filemanager --create a.txt text  
+
 Restrictions:  
 - Supports only one command at a time for now
 - Supports create and combine of the text files (binary streams are not tested) 
@@ -24,8 +29,8 @@ b) on your local machine within the repo typo
 mkdir build  
 cd build/  
 cmake ..  
-make  
-make test  
+cmake --build .
+ctest  
 c) output executable: build/app/filemanager  
 
 Depends on the boost 1.74 libraries

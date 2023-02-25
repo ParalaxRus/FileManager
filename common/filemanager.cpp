@@ -34,7 +34,10 @@ void FileManager::copy(const std::string& src, const std::string& dst, bool over
     output << input.rdbuf();
 }
 
-void FileManager::combine(const std::string& first, const std::string& second, const std::string& dst, bool overwrite) {
+void FileManager::combine(const std::string& first, 
+                          const std::string& second, 
+                          const std::string& dst, 
+                          bool overwrite) {
     if (!FileManager::exists(first)) {
         throw std::invalid_argument(first + " does not exist");
     }

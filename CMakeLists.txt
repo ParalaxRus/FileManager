@@ -6,3 +6,7 @@ add_subdirectory(app)
 
 ENABLE_TESTING()
 add_subdirectory(tests)
+
+SET(CPACK_GENERATOR "DEB")
+SET(CPACK_DEBIAN_PACKAGE_MAINTAINER "eugeneb")
+INCLUDE(CPack)

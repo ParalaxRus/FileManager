@@ -41,7 +41,7 @@ std::unique_ptr<Command> Parser::parse(int argc, char **argv) {
     else if (vm.count(kCombine)) {
         auto params = vm[kCombine].as<std::vector<std::string>>();
         if (params.size() != 3) {
-            throw std::invalid_argument("Invalid command");    
+            throw std::invalid_argument("Invalid command");
         }
         return std::make_unique<CombineCommand>(params[0], params[1], params[2]);
     }
@@ -50,7 +50,10 @@ std::unique_ptr<Command> Parser::parse(int argc, char **argv) {
         return std::make_unique<DeleteCommand>(params);
     }
     else {
-        const std::string usage = "filemanager [command] [args]\ncommand:\ncreate src [data]\ncopy src dst\ncombine first second dst\ndelete src\nexample: <filemanager --create tmp.txt text>";
+        const std::string usage = 
+            "filemanager [command] [args]\ncommand:\ncreate src [data]\n\
+            copy src dst\ncombine first second dst\ndelete src\n\
+            example: <filemanager --create tmp.txt text>";
         throw std::invalid_argument("Invalid command. Usage: \n" + usage);
     }
 
