@@ -6,9 +6,12 @@ FileManager CLI tool.
 Provides following API:
 - Create text file: filemanager --create [src] [data]
 - Copy file: filemanager --copy [src] [dst]
-- Combine file: filemanager --combine [first] [second] [dst]
+- Combine two text file: filemanager --combine [first] [second] [dst]
 - Delete file: filemanager --delete [src]  
-Supports only one command at a time for now
+
+Restrictions:
+- Supports only one command at a time for now
+- Supports create and combine of the text files (binary streams are not tested) 
 
 1. Project structure  
 App - file manager CLI executable, parser and commands execution  
