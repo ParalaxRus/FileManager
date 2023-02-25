@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Make sure you've udpated OS with 'sudo apt --update'"
+echo "Make sure you've udpated OS with 'sudo apt update'"
 echo "Make sure script is executable 'chmod u+x install.sh'"
 
 apt -y update
