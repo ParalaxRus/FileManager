@@ -19,10 +19,10 @@ Restrictions:
 - Supports create and combine of the text files (binary streams are not tested) 
 
 Project structure:  
-App - file manager CLI executable, parser and commands execution  
-Common - shared library with the file manipulation logic  
-Script - installation script mimicking CI pipeline  
-Tests - unit tests  
+app - file manager CLI executable, parser and commands execution  
+common - shared library with the file manipulation logic  
+script - installation script mimicking CI pipeline  
+tests - unit tests  
 
 Build and run unit tests with the cmake tool:  
 a) use git to checkout to your local machine  
