@@ -9,16 +9,16 @@ Provides following API:
 - Combine two text file: filemanager --combine [first] [second] [dst]
 - Delete file: filemanager --delete [src]  
 
-Restrictions:
+Restrictions:  
 - Supports only one command at a time for now
 - Supports create and combine of the text files (binary streams are not tested) 
 
-Project structure:
+Project structure:  
 App - file manager CLI executable, parser and commands execution  
 Common - shared library with the file manipulation logic  
 Tests - unit tests  
 
-Build and run unit tests with the cmake tool:
+Build and run unit tests with the cmake tool:  
 a) use git to checkout to your local machine  
 b) on your local machine within the repo typo  
 mkdir build  
