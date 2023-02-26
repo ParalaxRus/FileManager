@@ -24,15 +24,15 @@ Instructions for a bash script file which simulates CI and produces versioned de
 5) Generated debian package should be located in the 'home' folder
 
 
-Build and test repo with cmake (if need be):  
-a) use git to checkout FileManger repo to your local machine  
-b) Within the repo on your local mahine type:  
+Instructions for build and test repo with cmake:  
+1) Use git to checkout FileManger repo to your local machine  
+2) Within the repo on your local mahine type:  
 mkdir build  
 cd build/  
 cmake ..  
 cmake --build .
 ctest  
-c) output executable: build/app/filemanager  
+3) output executable: build/app/filemanager  
 
 Depends on the boost 1.74 libraries
 
