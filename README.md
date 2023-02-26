@@ -20,7 +20,7 @@ tests - unit tests
 Instructions for a bash script file which simulates CI and produces versioned debian package:  
 1) Make sure your OS is uptodate (sudo apt update)  
 2) Download installation script (FileManager/script/install.sh) to your local machine  
-3) Make sure script is executable: 'chmod x install.sh'  
+3) Make sure script is executable: 'chmod +x install.sh'  
 4) Run script (might need sudo)  
 5) Generated debian package should be located in the 'home' folder
 
