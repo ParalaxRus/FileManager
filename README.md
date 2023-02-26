@@ -26,7 +26,7 @@ Instructions for a bash script file which simulates CI and produces versioned de
 
 Build and test repo with cmake (if need be):  
 a) use git to checkout FileManger repo to your local machine  
-b) on your local machine within the repo typo  
+b) Within the repo on your local mahine type:  
 mkdir build  
 cd build/  
 cmake ..  
