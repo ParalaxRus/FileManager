@@ -9,6 +9,7 @@ Provides following API:
 Restrictions:  
 - Supports only one command at a time for now
 - Supports create and combine of the text files (binary streams are not tested)  
+
 Project structure:  
 app - file manager CLI executable, parser and commands execution  
 common - shared library with the file manipulation logic  
