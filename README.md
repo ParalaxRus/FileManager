@@ -22,7 +22,7 @@ Instructions for a bash script file which simulates CI and produces versioned de
 2) Download installation script (FileManager/script/install.sh) to your local machine  
 3) Make sure script is executable: 'chmod +x install.sh'  
 4) Run script (might need sudo)  
-5) It produces versioned debian package and installes it into 'home' folder
+5) It produces versioned debian package (FileManager.xxx.deb) and installes it (FileManager) into the 'home' folder (common.so library goes into lib folder)
 
 
 Instructions for build and test repo with cmake:  
