@@ -1,6 +1,4 @@
 # FileManager
-Sample task
-
 FileManager CLI tool. 
 
 Provides following API:
@@ -8,21 +6,15 @@ Provides following API:
 - Copy file: filemanager --copy [src] [dst]
 - Combine two text file: filemanager --combine [first] [second] [dst]
 - Delete file: filemanager --delete [src]  
-
-Example:  
-./filemanager --create a.txt text  
-or in case if elevated privileges needed  
-sudo ./filemanager --create a.txt text  
-
 Restrictions:  
 - Supports only one command at a time for now
 - Supports create and combine of the text files (binary streams are not tested) 
-
 Project structure:  
 app - file manager CLI executable, parser and commands execution  
 common - shared library with the file manipulation logic  
 script - installation script mimicking CI pipeline  (might need 'sudo')  
 tests - unit tests  
+
 
 Instructions for a bash script file which simulates CI and produces versioned debian package:  
 1) Make sure your OS is uptodate (sudo apt update)  
@@ -32,7 +24,7 @@ Instructions for a bash script file which simulates CI and produces versioned de
 5) Generated debian package should be located in the 'home' folder
 
 
-Build and test with cmake:  
+Build and test repo with cmake (if need be):  
 a) use git to checkout FileManger repo to your local machine  
 b) on your local machine within the repo typo  
 mkdir build  
