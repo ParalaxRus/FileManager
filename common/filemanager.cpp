@@ -30,11 +30,9 @@ bool FileManager::copyFile(const std::string& src, const std::string& dst) {
     return output.good();
 }
 
-bool FileManager::combineFile(const std::string& first, 
-                              const std::string& second, 
-                              const std::string& dst) {
-    std::ofstream output(dst.c_str(), output.in | output.binary | output.ate);
-    std::ifstream input(second.c_str());
+bool FileManager::combineFile(const std::string& first, const std::string& second) {
+    std::ofstream output(second.c_str(), output.in | output.binary | output.ate);
+    std::ifstream input(first.c_str());
     output << input.rdbuf();
 
     return output.good();
@@ -90,7 +88,8 @@ void FileManager::combine(const std::string& first,
 
     FileManager::copy(first, dst);
 
-    if (!FileManager::retry(FileManager::combineFile, kRetryCount, kRetryWaitMs, first, second, dst)) {
+    if (!FileManager::retry(FileManager::combineFile, kRetryCount, kRetryWaitMs, second, dst)) {
+        FileManager::remove(dst);
         throw std::invalid_argument("Create failed");
     }
 }

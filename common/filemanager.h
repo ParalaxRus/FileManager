@@ -14,9 +14,7 @@ private:
 
     static bool copyFile(const std::string& src, const std::string& dst);
 
-    static bool combineFile(const std::string& first, 
-                            const std::string& second, 
-                            const std::string& dst);
+    static bool combineFile(const std::string& first, const std::string& second);
                         
     static bool removeFile(const std::string& src);
 
