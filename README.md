@@ -31,7 +31,7 @@ Instructions for build and test repo with cmake:
 mkdir build  
 cd build/  
 cmake ..  
-cmake --build .
+cmake --build .  
 ctest  
 3) output executable: build/app/filemanager  
 
